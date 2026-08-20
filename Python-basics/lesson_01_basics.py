@@ -34,3 +34,8 @@ delta_V = 0.012
 delta_T = 20
 S = calculate_seebeck(delta_V, delta_T)
 print (S)
+
+temperature = [300, 310, 320, 330, 340]
+resistance = [120, 125, 132, 140, 150]
+for T,R in zip (temperature, resistance):
+    print(T,R)
