@@ -47,3 +47,18 @@ print (temperature)
 print (resistance)
 R2 = resistance *2
 print (R2)
+
+import numpy as np
+
+voltage = np.array([1, 2, 3, 4, 5])
+current = np.array([0.01, 0.02, 0.03, 0.04, 0.05])
+
+resistance = voltage / current
+
+print(resistance)
+
+import numpy as np
+voltage = np.array([1,2,3,4,5])
+current = np.array ([0.01,0.02,0.03,0.04,0.05])
+resistance = voltage/current
+print(resistance)
