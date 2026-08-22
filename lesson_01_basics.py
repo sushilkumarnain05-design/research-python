@@ -32,4 +32,6 @@ print("average:",np.mean (resistance))
 print("maximum:", np.max(resistance))
 print("minimum:", np.min(resistance))
 print ("standard deviation:", np.std(resistance))
+high_R = resistance[resistance > 130]
 
+print(high_R)
