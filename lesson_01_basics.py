@@ -42,5 +42,11 @@ print("maximum:", np.max(resistance))
 print("minimum:", np.min(resistance))
 print ("standard deviation:", np.std(resistance))
 high_R = resistance[resistance > 130]
-
 print(high_R)
+
+
+intensity = np.array ([120, 450, 80, 1250, 300, 1800])
+strong = intensity [intensity >500]
+print(strong)
+import matplotlib.pyplot as plt
+print("matplotlib imported successfully")
