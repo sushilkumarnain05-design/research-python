@@ -35,3 +35,12 @@ print ("standard deviation:", np.std(resistance))
 high_R = resistance[resistance > 130]
 
 print(high_R)
+import numpy as np
+resistance = np.array ([120, 125, 132, 140, 150])
+print("average:",np.mean (resistance))
+print("maximum:", np.max(resistance))
+print("minimum:", np.min(resistance))
+print ("standard deviation:", np.std(resistance))
+high_R = resistance[resistance > 130]
+
+print(high_R)
