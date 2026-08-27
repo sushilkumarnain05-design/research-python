@@ -154,13 +154,28 @@ y=np.array([2, 4, 5, 8, 10])
 # plt.show()
 # print(y_fit)
 
+# import numpy as np
+# import matplotlib.pyplot as plt
+# x=np.array([0,1,2,3,4])
+# y=np.array([1,2,5,10,17])
+# coefficients=np.polyfit(x,y,2)
+# print(coefficients)
+# y_fit=np.polyval(coefficients,x)
+# plt.scatter(x,y)
+# plt.plot(x,y_fit)
+# plt.show()
+
+
 import numpy as np
 import matplotlib.pyplot as plt
-x=np.array([0,1,2,3,4])
-y=np.array([1,2,5,10,17])
-coefficients=np.polyfit(x,y,2)
-print(coefficients)
-y_fit=np.polyval(coefficients,x)
-plt.scatter(x,y)
-plt.plot(x,y_fit)
+x = np.array([0, 1, 2, 3, 4])
+y = np.array([1, 2, 5, 10, 17])
+coefficients = np.polyfit(x, y, 2)
+print("Coefficients:", coefficients)
+y_fit = np.polyval(coefficients, x)
+print("Fitted y values:", y_fit)
+x_smooth = np.linspace(0, 4, 100)
+y_smooth = np.polyval(coefficients, x_smooth)
+plt.scatter(x, y)
+plt.plot(x_smooth, y_smooth)
 plt.show()
