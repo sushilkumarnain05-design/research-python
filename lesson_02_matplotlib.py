@@ -112,8 +112,55 @@
 # plt.legend()
 # plt.show()
 import numpy as np
+from matplotlib.pyplot import scatter
+
 x=np.array([1,2,3,4,5])
 y=np.array([2, 4, 5, 8, 10])
-coefficient=np.polyfit(x,y,1)
-print("Coefficient:",coefficient)
+# coefficient=np.polyfit(x,y,1)
+# print("Coefficient:",coefficient)
 
+# coefficient=np.polyfit(x,y,1)
+# print(coefficient)
+
+# x = np.array([1, 2, 3, 4, 5])
+# y = np.array([2, 4, 5, 8, 10])
+#
+# coefficients = np.polyfit(x, y, 1)
+# # print("coefficients",coefficients)
+# fitted_y=np.polyval(coefficients,x)
+# print("fitted values:", fitted_y)
+
+# import numpy as np
+# import matplotlib.pyplot as plt
+# x=np.array([0,1,2,3,4,])
+# y=np.array([-0.2, 1.8, 3.8, 5.8, 7.8])
+# coefficients=np.polyfit(x,y,1)
+# m=coefficients[0]
+# c=coefficients[1]
+# y_fit=m*x+c
+# print("slope=",m)
+# print("intercept=",c)
+# print("fitted y=", y_fit)
+
+# import numpy as np
+# import matplotlib.pyplot as plt
+# x=np.array([0,1,2,3,4])
+# y=np.array([1,2,5,10,17])
+# coefficients=np.polyfit(x,y,2)
+# print(coefficients)
+# y_fit=np.polyval(coefficients,x)
+# plt.scatter(x,y)
+# plt.plot(x,y_fit)
+# plt.show()
+# print(y_fit)
+
+import numpy as np
+import matplotlib.pyplot as plt
+x=np.array([0,1,2,3,4])
+y=np.array([1,2,5,10,17])
+coefficients=np.polyfit(x,y,2)
+print(coefficients)
+y_fit=np.polyval(coefficients,x)
+plt.scatter(x,y)
+plt.plot(x,y_fit)
+plt.show()
