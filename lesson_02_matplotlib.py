@@ -166,16 +166,97 @@ y=np.array([2, 4, 5, 8, 10])
 # plt.show()
 
 
-import numpy as np
-import matplotlib.pyplot as plt
-x = np.array([0, 1, 2, 3, 4])
-y = np.array([1, 2, 5, 10, 17])
-coefficients = np.polyfit(x, y, 2)
-print("Coefficients:", coefficients)
-y_fit = np.polyval(coefficients, x)
-print("Fitted y values:", y_fit)
-x_smooth = np.linspace(0, 4, 100)
-y_smooth = np.polyval(coefficients, x_smooth)
-plt.scatter(x, y)
-plt.plot(x_smooth, y_smooth)
-plt.show()
+# import numpy as np
+# import matplotlib.pyplot as plt
+# x = np.array([0, 1, 2, 3, 4])
+# y = np.array([1, 2, 5, 10, 17])
+# coefficients = np.polyfit(x, y, 2)
+# print("Coefficients:", coefficients)
+# y_fit = np.polyval(coefficients, x)
+# print("Fitted y values:", y_fit)
+# x_smooth = np.linspace(0, 4, 100)
+# y_smooth = np.polyval(coefficients, x_smooth)
+# plt.scatter(x, y)
+# plt.plot(x_smooth, y_smooth)
+# plt.show()
+
+# import numpy as np
+# x=np.array([0, 1, 2, 3, 4])
+# y=np.array([1, 2, 5, 10, 17])
+# fit_1=np.polyfit(x,y,1)
+# fit_2=np.polyfit(x,y,2)
+# fit_3=np.polyfit(x,y,3)
+# print("degree i", fit_1)
+# print("degree 2", fit_2)
+# print("degree 3", fit_3)
+
+# import numpy as np
+# import matplotlib.pyplot as plt
+# x=np.array ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+# y=np.array([2, 3, 5, 8, 12, 17, 23, 30, 38, 47])
+# fit_1=np.polyfit(x,y,1)
+# fit_2=np.polyfit(x,y,2)
+# fit_9=np.polyfit(x,y,9)
+# x_smooth=np.linspace(0,9,200)
+# y_1=np.polyval(fit_1,x_smooth)
+# y_2=np.polyval(fit_2,x_smooth)
+# y_9=np.polyval(fit_9,x_smooth)
+# plt.scatter(x,y)
+# plt.plot(x_smooth, y_1, label="Degree 1", linestyle="--")
+# plt.plot(x_smooth, y_2, label="Degree 2", linestyle="-")
+# plt.plot(x_smooth, y_9, label="Degree 9", linestyle=":")
+# plt.xlabel("x")
+# plt.ylabel("y")
+# plt.legend()
+# plt.show()
+
+# import numpy as np
+# import matplotlib.pyplot as plt
+#
+# # Data
+# x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+# y = np.array([2, 2.5, 4, 7, 11, 16, 23, 31, 40, 52])
+#
+# # Polynomial fits
+# fit_1 = np.polyfit(x, y, 1)
+# fit_2 = np.polyfit(x, y, 2)
+# fit_9 = np.polyfit(x, y, 9)
+#
+# # Smooth x-values
+# x_smooth = np.linspace(0, 9, 200)
+#
+# # Fitted curves
+# y_1 = np.polyval(fit_1, x_smooth)
+# y_2 = np.polyval(fit_2, x_smooth)
+# y_9 = np.polyval(fit_9, x_smooth)
+#
+# # Plot
+# plt.scatter(x, y)
+#
+# plt.plot(x_smooth, y_1, label="Degree 1", linestyle="--")
+# plt.plot(x_smooth, y_2, label="Degree 2")
+# plt.plot(x_smooth, y_9, label="Degree 9", linestyle=":")
+#
+# plt.xlabel("x")
+# plt.ylabel("y")
+# plt.legend()
+#
+# plt.show()
+
+# import numpy as np
+# import matplotlib.pyplot as plt
+#
+# # Data
+# x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+# y = np.array([2, 2.5, 4, 7, 11, 16, 23, 31, 40, 52])
+#
+# # Polynomial fits
+# fit_1 = np.polyfit(x, y, 1)
+# fit_2 = np.polyfit(x, y, 2)
+# fit_9 = np.polyfit(x, y, 9)
+#
+# # Print coefficients
+# print("Degree 1:", fit_1)
+# print("Degree 2:", fit_2)
+# print("Degree 9:", fit_9)
+
