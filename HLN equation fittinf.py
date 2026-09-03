@@ -135,5 +135,8 @@ if __name__ == "__main__":
         print("=========================\n")
         sys.exit(1)
 
+import scipy.special as special
+print("Success! scipy.special is working.")
+print("Digamma value of 0.5 is:", special.psi(0.5))
 
 
